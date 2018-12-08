@@ -10,17 +10,15 @@ public class buildingFalldown : MonoBehaviour {
     private Rigidbody build_rb = null;
 
     // Use this for initialization
-    private void Awake()
-    {
+    private void Awake() {
         build_rb = GetComponent<Rigidbody>();
 
     }
-    void Start () {
 
+    public void Play () {
         Vector3 rightVec = transform.right;
         Vector3 torque = rightVec * build_torqueForce;
         build_rb.AddTorque(torque, ForceMode.Force);
-
     }
 
     // Update is called once per frame
