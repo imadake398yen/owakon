@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using Model;
+using UnityEngine.Events;
 
 public class UIManager : MonoBehaviour {
 
@@ -12,7 +13,11 @@ public class UIManager : MonoBehaviour {
 
 	private Const.StageState lastStageState;
 
-	private void Update () {
+	private void Start () {
+		Stage.OnChangeStateActions.Add(() => { OnChangeState(); });
+	}
+
+	private void OnChangeState () {
 		if (lastStageState != Stage.State) {
 			switch (Stage.State) {
 				case Const.StageState.Create:
