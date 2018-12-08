@@ -14,6 +14,8 @@ public class UIManager : MonoBehaviour {
 	private Const.StageState lastStageState;
 
 	private void Start () {
+		createPanel.SetActive(true);
+		homecommingPanel.SetActive(false);
 		Stage.OnChangeStateActions.Add(() => { OnChangeState(); });
 	}
 

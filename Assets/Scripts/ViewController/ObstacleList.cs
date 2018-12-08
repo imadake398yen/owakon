@@ -29,6 +29,7 @@ public class ObstacleList : MonoBehaviour {
 			MainCameraController.instance.ChangeState(Const.CameraState.Scroll);
 			isMoving = true;
 			isOpen = false;
+			Placer.LastPushObstacleCell.ToCancelSelectColor();
 			openButton.gameObject.SetActive(true);
 			closeButton.gameObject.SetActive(false);
 		});
