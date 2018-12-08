@@ -7,7 +7,7 @@
 
 	public enum StageState {
 		Create,
-		BraveManHomecoming
+		BraveManHomecoming,
 	}
 
 }
