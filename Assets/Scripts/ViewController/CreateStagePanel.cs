@@ -12,6 +12,7 @@ public class CreateStagePanel : MonoBehaviour {
 	private void Start () {
 		startButton.onClick.AddListener(() => {
 			Model.Stage.ChangeState(Const.StageState.BraveManHomecoming);
+			MainCameraController.instance.ChangeState(Const.CameraState.ChaseTarget);
 		});
 		foreach (var o in ResourceManager.Obstacles) {
 			var obstacleCell = Instantiate(obstaceCellPrefab) as ObstacleCell;

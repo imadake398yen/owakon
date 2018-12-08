@@ -3,6 +3,7 @@
 	public enum CameraState {
 		ChaseTarget,
 		Scroll,
+		PlaceObstacle,
 	}
 
 	public enum StageState {

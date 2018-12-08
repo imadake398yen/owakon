@@ -9,7 +9,7 @@ public class HomecommingPanel : MonoBehaviour {
 
 	void Start () {
 		toChaseCameraButton.onClick.AddListener(() => {
-			MainCameraController.instance.ToChaseState();
+			MainCameraController.instance.ChangeState(Const.CameraState.ChaseTarget);
 		});
 	}
 

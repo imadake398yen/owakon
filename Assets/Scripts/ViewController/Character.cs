@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.AI;
 using Model;
 
-public class Character : MonoBehaviour {
+public class Character : SingletonMonoBehaviour<Character> {
 
     public int HitPoint { get; set; }
     public float Speed { get; set; }
