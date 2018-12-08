@@ -23,7 +23,10 @@ public class BuildingFalldown : Obstacle {
     }
 
     // Update is called once per frame
-    void Update() {
-
+    void OnMouseDown() {
+        Play();
     }
+
+
+
 }
