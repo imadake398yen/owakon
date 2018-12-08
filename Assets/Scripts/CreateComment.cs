@@ -12,6 +12,7 @@ public class CreateComment : MonoBehaviour
     string[] good = {
         "まだこんなところで死ぬわけにはいかない…",
         "失敗...",
+        "成功！"
 };
 
     private void Start()
@@ -20,6 +21,12 @@ public class CreateComment : MonoBehaviour
         {
             StartCoroutine(setSpeech(good[1]));
         }
+
+        if (SceneManager.GetActiveScene().name == "SuccessResult")
+        {
+            StartCoroutine(setSpeech(good[2]));
+        }
+
     }
 
     void Update()
