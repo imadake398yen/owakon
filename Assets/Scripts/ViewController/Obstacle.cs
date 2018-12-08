@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Obstacle : MonoBehaviour {
 
+	protected void Play () {
 
+	}
 
 }

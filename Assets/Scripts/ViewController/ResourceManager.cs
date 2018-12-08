@@ -6,5 +6,6 @@ public class ResourceManager
 : SingletonMonoBehaviour<ResourceManager> {
 
 	[SerializeField] private List<Obstacle> obstacles;
+	public static List<Obstacle> Obstacles { get{ return instance.obstacles; } }
 
 }

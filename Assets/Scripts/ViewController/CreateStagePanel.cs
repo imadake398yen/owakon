@@ -6,11 +6,18 @@ using UnityEngine.UI;
 public class CreateStagePanel : MonoBehaviour {
 
 	[SerializeField] private Button startButton;
+	[SerializeField] private ObstacleCell obstaceCellPrefab;
+	[SerializeField] private Transform obstaceCellParent;
 
 	private void Start () {
 		startButton.onClick.AddListener(() => {
 			Model.Stage.ChangeState(Const.StageState.BraveManHomecoming);
 		});
+		foreach (var o in ResourceManager.Obstacles) {
+			var obstacleCell = Instantiate(obstaceCellPrefab) as ObstacleCell;
+			obstacleCell.transform.SetParentWithReset(obstaceCellParent);
+			obstacleCell.SetValues(o);
+		}
 	}
 
 }

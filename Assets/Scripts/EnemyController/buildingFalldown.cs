@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class buildingFalldown : MonoBehaviour {
+public class BuildingFalldown : Obstacle {
 
     [SerializeField]
     private float build_torqueForce = 0.0f;
@@ -16,13 +16,14 @@ public class buildingFalldown : MonoBehaviour {
     }
 
     public void Play () {
+        base.Play();
         Vector3 rightVec = transform.right;
         Vector3 torque = rightVec * build_torqueForce;
         build_rb.AddTorque(torque, ForceMode.Force);
     }
 
     // Update is called once per frame
-    void Update()
-    {
+    void Update() {
+
     }
 }
