@@ -98,8 +98,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4283725901713024}
+  - component: {fileID: 65830627095378984}
+  - component: {fileID: 114266417633371088}
   m_Layer: 0
-  m_Name: wall03
+  m_Name: Wall03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -115,7 +117,6 @@ GameObject:
   - component: {fileID: 4326511130655848}
   - component: {fileID: 54343205431250718}
   - component: {fileID: 65696065105042046}
-  - component: {fileID: 114975976461303138}
   m_Layer: 0
   m_Name: Wall03
   m_TagString: Untagged
@@ -202,7 +203,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1535342934914140}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.6, y: 2.3500001, z: 0.34}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4326511130655848}
@@ -229,7 +230,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1565364487958668}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.1, y: -1.3343002, z: -2.0707}
+  m_LocalPosition: {x: 0.38, y: 0.948, z: -0.43}
   m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
   m_Children:
   - {fileID: 4344992093245474}
@@ -434,15 +435,29 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 26.85357, y: 53.812103, z: 8.919464}
   m_Center: {x: -6.9319296, y: 7.8161335, z: 7.5037284}
---- !u!114 &114975976461303138
+--- !u!65 &65830627095378984
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1535342934914140}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.45, y: 3.12, z: 0.64}
+  m_Center: {x: 0, y: 1.42, z: 0}
+--- !u!114 &114266417633371088
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1565364487958668}
+  m_GameObject: {fileID: 1535342934914140}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 70334bee81c244f0a8973b8546c2531a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  directionObj: {fileID: 1076277952305444}
+  cost: 0
   build_torqueForce: 100

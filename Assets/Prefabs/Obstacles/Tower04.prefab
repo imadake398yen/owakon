@@ -34,8 +34,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4153320937945868}
+  - component: {fileID: 65411378884503134}
+  - component: {fileID: 114709786775210990}
   m_Layer: 0
-  m_Name: tower04
+  m_Name: Tower04
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -194,7 +196,6 @@ GameObject:
   - component: {fileID: 4385632690690394}
   - component: {fileID: 54712621705392400}
   - component: {fileID: 65188189704997256}
-  - component: {fileID: 114152951076318838}
   m_Layer: 0
   m_Name: Tower04
   m_TagString: Untagged
@@ -236,7 +237,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1126464928241296}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.31, y: 1.26, z: -5.3}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4385632690690394}
@@ -264,7 +265,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1985801483656748}
   m_LocalRotation: {x: -0.0011059925, y: 0.00049120595, z: -0.00029185027, w: 0.9999992}
-  m_LocalPosition: {x: -0.099999905, y: -0.26, z: -0.53999996}
+  m_LocalPosition: {x: -0.1, y: 0.99, z: -0.54}
   m_LocalScale: {x: 0.05, y: 0.05000001, z: 0.05000001}
   m_Children:
   - {fileID: 4616511442224220}
@@ -568,15 +569,29 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 25.266294, y: 83.04763, z: 29.221714}
   m_Center: {x: -0.748055, y: 22.144995, z: 11.028352}
---- !u!114 &114152951076318838
+--- !u!65 &65411378884503134
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1126464928241296}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.83, y: 4.41, z: 1.69}
+  m_Center: {x: 0, y: 2.09, z: 0}
+--- !u!114 &114709786775210990
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1985801483656748}
+  m_GameObject: {fileID: 1126464928241296}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 70334bee81c244f0a8973b8546c2531a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  directionObj: {fileID: 1130306397251196}
+  cost: 0
   build_torqueForce: 300

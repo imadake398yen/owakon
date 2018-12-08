@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BarrelRolling : Obstacle {
+public class Barrel : Obstacle {
 
     public int force = 10;
     private Rigidbody barrel_rigidbody = null;
@@ -10,7 +10,7 @@ public class BarrelRolling : Obstacle {
 
     // Use this for initialization
     private void Awake() {
-        barrel_rigidbody = GetComponent<Rigidbody>();
+        barrel_rigidbody = GetComponentInChildren<Rigidbody>();
     }
 
 	public void Play () {
@@ -21,7 +21,7 @@ public class BarrelRolling : Obstacle {
     // Update is called once per frame
     void Update () {
         if (!isPlaying) return;
-        barrel_rigidbody.AddForce(0,0,-force);
+        barrel_rigidbody.AddForce(0,0,force);
 	}
 
     private void OnMouseDown()

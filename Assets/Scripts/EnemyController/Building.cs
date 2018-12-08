@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BuildingFalldown : Obstacle {
+public class Building : Obstacle {
 
     [SerializeField]
     private float build_torqueForce = 0.0f;
@@ -11,8 +11,7 @@ public class BuildingFalldown : Obstacle {
 
     // Use this for initialization
     private void Awake() {
-        build_rb = GetComponent<Rigidbody>();
-
+        build_rb = GetComponentInChildren<Rigidbody>();
     }
 
     public void Play () {
@@ -26,7 +25,5 @@ public class BuildingFalldown : Obstacle {
     void OnMouseDown() {
         Play();
     }
-
-
 
 }
