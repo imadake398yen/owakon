@@ -11,7 +11,7 @@ public class MainCameraController
 
 	[SerializeField] private Transform target;
 	private float sensitivity = .001f;
-	private Vector3 offset = new Vector3(-10,20,-25);
+	private Vector3 offset = new Vector3(0,14,-14);
 	private Vector3 lastPointerPosition, scrollDistance;
 
 	private Camera camera;
