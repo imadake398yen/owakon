@@ -6,6 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Start.unity
+    guid: 7bb82a934cf364ceeb7ab44ec2cdc830
+  - enabled: 1
+    path: Assets/Scenes/Main_Fummicc1.unity
+    guid: a523068f6baf849f0bb6ebc52632615d
+  - enabled: 1
+    path: Assets/Scenes/Result.unity
+    guid: 0b41bc087d49646bc93e0138838c32a2
+  - enabled: 1
     path: Assets/Scenes/fummicc1.unity
     guid: 922cb7fc2864d40d3842751e35cb29c6
   - enabled: 1
