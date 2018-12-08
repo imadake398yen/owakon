@@ -431,7 +431,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Start
+  m_Text: "\u30B2\u30FC\u30E0\u958B\u59CB"
 --- !u!222 &739372484
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -472,7 +472,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 90.93, y: 71}
+  m_AnchoredPosition: {x: -211, y: 71}
   m_SizeDelta: {x: 341.86, y: 131.36}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &912778340
@@ -486,8 +486,8 @@ MonoBehaviour:
   m_Script: {fileID: -900027084, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
-  m_EffectDistance: {x: 1, y: -1}
+  m_EffectColor: {r: 0.6509804, g: 0.645584, b: 0.1882353, a: 0.5}
+  m_EffectDistance: {x: 2, y: 2}
   m_UseGraphicAlpha: 1
 --- !u!114 &912778341
 MonoBehaviour:
