@@ -11,4 +11,10 @@
 		BraveManHomecoming,
 	}
 
+	public enum ObstacleState {
+		Edit,
+		Ready,
+		Played,
+	}
+
 }

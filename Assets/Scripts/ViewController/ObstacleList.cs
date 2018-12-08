@@ -44,7 +44,7 @@ public class ObstacleList : MonoBehaviour {
 			targetPosition,
 			easing * Time.deltaTime
 		);
-		if (Vector3.Distance(targetPosition, transform.position) < 0.1f) {
+		if (Vector3.Distance(targetPosition, transform.position) < 0.01f) {
 			isMoving = false;
 		}
 	}
