@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class CreateComment : MonoBehaviour
 {
@@ -10,11 +11,20 @@ public class CreateComment : MonoBehaviour
 
     string[] good = {
         "まだこんなところで死ぬわけにはいかない…",
-        "まだまだ戦えるぜ",
+        "失敗...",
 };
+
+    private void Start()
+    {
+        if (SceneManager.GetActiveScene().name == "FailResult")
+        {
+            StartCoroutine(setSpeech(good[1]));
+        }
+    }
 
     void Update()
     {
+
         if (Input.GetKey(KeyCode.A))//A
         {
             //StartCoroutine(setSpeech(good[UnityEngine.Random.Range(0, good.Length-1)]));
