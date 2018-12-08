@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using Model;
 
 public class Character : MonoBehaviour {
 
@@ -18,6 +19,8 @@ public class Character : MonoBehaviour {
     }
 
     private void Update () {
+        if (Stage.State != Const.StageState.BraveManHomecoming) return;
+
         var distance = Vector3.Distance(transform.position, target.position);
         if (distance < 0.3f) {
             currentTarget += 1;

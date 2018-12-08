@@ -2,15 +2,30 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Model;
 
 public class UIManager : MonoBehaviour {
 
-	[SerializeField] private Button toChaseCameraButton;
+	[SerializeField] private GameObject
+		createPanel,
+		homecommingPanel;
 
-	void Start () {
-		toChaseCameraButton.onClick.AddListener(() => {
-			MainCameraController.instance.ToChaseState();
-		});
+	private Const.StageState lastStageState;
+
+	private void Update () {
+		if (lastStageState != Stage.State) {
+			switch (Stage.State) {
+				case Const.StageState.Create:
+					createPanel.SetActive(true);
+					homecommingPanel.SetActive(false);
+					break;
+				case Const.StageState.BraveManHomecoming:
+					createPanel.SetActive(false);
+					homecommingPanel.SetActive(true);
+					break;
+			}
+		} else return;
+		lastStageState = Stage.State;
 	}
 
 }

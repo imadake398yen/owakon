@@ -5,4 +5,9 @@
 		Scroll,
 	}
 
+	public enum StageState {
+		Create,
+		BraveManHomecoming
+	}
+
 }
