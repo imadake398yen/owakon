@@ -6,8 +6,8 @@ public class AnimalComeHit : Obstacle {
 
     [SerializeField]
     private int MaxChild = 5;
-    private GameObject BoidsChild;
-    private GameObject[] BoidsChildren;
+    private GameObject AnimalsChild;
+    private GameObject[] AnimalsChildren;
 
 	// Use this for initialization
     private void Start (){
@@ -17,12 +17,12 @@ public class AnimalComeHit : Obstacle {
 	// Update is called once per frame
 	public void Play () {
         base.Play();
-        this.BoidsChildren = new GameObject[MaxChild];
+        this.AnimalsChildren = new GameObject[MaxChild];
 
         for (int i = 0; i < this.MaxChild; i++){
-                this.BoidsChildren[i] = GameObject.Instantiate(BoidsChild) as GameObject;
+                this.AnimalsChildren[i] = GameObject.Instantiate(AnimalsChild) as GameObject;
 
-                this.BoidsChildren[i].transform.position = new Vector3(Random.Range(-50f, 50f),this.BoidsChild.transform.position.y,Random.Range(-50f, 50f));
+                this.AnimalsChildren[i].transform.position = new Vector3(this.AnimalsChild.transform.position.x, this.AnimalsChild.transform.position.y, Random.Range(-50f, 50f));
         }
 
 	}
