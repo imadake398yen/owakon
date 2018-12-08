@@ -23,4 +23,9 @@ public class BarrelRolling : Obstacle {
         if (!isPlaying) return;
         barrel_rigidbody.AddForce(0,0,-force);
 	}
+
+    private void OnMouseDown()
+    {
+        Play();
+    }
 }
