@@ -5,21 +5,21 @@ using UnityEngine;
 public class buildingFalldown : MonoBehaviour {
 
     [SerializeField]
-    private float b_torqueForce = 0.0f;
+    private float build_torqueForce = 0.0f;
 
-    private Rigidbody b_rigidbody = null;
+    private Rigidbody build_rb = null;
 
     // Use this for initialization
     private void Awake()
     {
-        b_rigidbody = GetComponent<Rigidbody>();
+        build_rb = GetComponent<Rigidbody>();
 
     }
     void Start () {
 
         Vector3 rightVec = transform.right;
-        Vector3 torque = rightVec * b_torqueForce;
-        b_rigidbody.AddTorque(torque, ForceMode.Force);
+        Vector3 torque = rightVec * build_torqueForce;
+        build_rb.AddTorque(torque, ForceMode.Force);
 
     }
 
