@@ -26,5 +26,4 @@ public class MainToResult : MonoBehaviour
 
         ChangeScene.ChangeSceneTo("");
     }
-
 }
