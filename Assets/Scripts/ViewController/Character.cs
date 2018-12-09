@@ -52,6 +52,7 @@ public class Character : SingletonMonoBehaviour<Character> {
     public void Damage (float damage) {
         if (Stage.State != Const.StageState.BraveManHomecoming) return;
         HitPoint -= damage;
+        Fukidash.instance.Play();
         HomecommingPanel.instance.Damage();
         if (HitPoint < 0) {
             HitPoint = 0;

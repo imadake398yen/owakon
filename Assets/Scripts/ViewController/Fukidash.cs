@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class Fukidash : MonoBehaviour {
+public class Fukidash : SingletonMonoBehaviour<Fukidash> {
 
     [SerializeField] private Text label;
     private Animator animator;
@@ -16,8 +16,8 @@ public class Fukidash : MonoBehaviour {
     };
 
     string[] mainScene = {
-        "まだこんなところで死ぬわけにはいかない...",
-        "ヒメが待ってるんだ、、早く帰らないと...",
+        "クッ...まだこんなところで死ぬわけにはいかない...",
+        "ぐはぁ...!!ヒメが待ってるんだ、、早く帰らないと...",
         "おれの帰りを待ってくれてる人がいる。それだけで頑張れる。"
     };
 
