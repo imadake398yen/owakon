@@ -48,8 +48,8 @@ public class MainCameraController
 				transform.position += new Vector3( scrollDistance.x, 0, scrollDistance.y ) * sensitivity;
 				break;
 			case Const.CameraState.PlaceObstacle:
+				if (Placer.SelectedObstacle == null) break;
 				if (Input.GetMouseButtonDown(0)) {
-					if (Placer.SelectedObstacle != null) break;
 					RaycastHit hit;
 					Ray ray = camera.ScreenPointToRay(Input.mousePosition);
 					if (Physics.Raycast(ray, out hit)) {
