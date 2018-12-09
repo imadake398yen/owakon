@@ -55,6 +55,7 @@ public class Character : SingletonMonoBehaviour<Character> {
         HomecommingPanel.instance.Damage();
         if (HitPoint < 0) {
             HitPoint = 0;
+            UnityEngine.SceneManagement.SceneManager.LoadScene("SuccessResult");
         }
     }
 
