@@ -1,31 +1,16 @@
 fileFormatVersion: 2
-guid: 9bcf2f32fbf3a4f16b225cf3e4b6b2d5
+guid: caa1ef405c9b3437bae7a731a09288cc
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: Duplicate25
+    100000: default
     100002: //RootNode
-    100004: Regroup10
-    100006: Regroup14
-    100008: Regroup20
-    400000: Duplicate25
+    400000: default
     400002: //RootNode
-    400004: Regroup10
-    400006: Regroup14
-    400008: Regroup20
     2100000: Standard
-    2300000: Duplicate25
-    2300002: Regroup10
-    2300004: Regroup14
-    2300006: Regroup20
-    3300000: Duplicate25
-    3300002: Regroup10
-    3300004: Regroup14
-    3300006: Regroup20
-    4300000: Regroup20
-    4300002: Duplicate25
-    4300004: Regroup14
-    4300006: Regroup10
+    2300000: default
+    3300000: default
+    4300000: default
   externalObjects: {}
   materials:
     importMaterials: 1
