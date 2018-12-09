@@ -18,4 +18,8 @@ public class Obstacle : MonoBehaviour {
 		transform.Rotate(Vector3.up * Time.deltaTime * rotateSpeed);
 	}
 
+	public void ChangeState (Const.ObstacleState state) {
+		State = state;
+	}
+
 }

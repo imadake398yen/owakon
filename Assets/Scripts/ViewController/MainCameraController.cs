@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Model;
 
 public class MainCameraController
 : SingletonMonoBehaviour<MainCameraController> {
@@ -13,6 +14,8 @@ public class MainCameraController
 	private float sensitivity = .001f;
 	private Vector3 offset = new Vector3(0,14,-14);
 	private Vector3 lastPointerPosition, scrollDistance;
+
+	private List<Obstacle> obstacles = new List<Obstacle>();
 
 	private Camera camera;
 	private void Start () {
@@ -55,6 +58,7 @@ public class MainCameraController
 					if (Physics.Raycast(ray, out hit)) {
 						var obstacle = Instantiate(Placer.SelectedObstacle) as Obstacle;
 						obstacle.transform.position = hit.point;
+						Stage.Obstacles.Add(obstacle);
 						ChangeState(Const.CameraState.Scroll);
 						Placer.CancelSelect();
 					}

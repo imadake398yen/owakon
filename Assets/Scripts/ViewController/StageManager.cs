@@ -9,7 +9,7 @@ public class StageManager
 	[SerializeField] private List<Transform> points;
 	public List<Transform> Points { get{ return points; } }
 
-	private void Awame () {
+	private void Awake () {
 		Stage.Init();
 	}
 

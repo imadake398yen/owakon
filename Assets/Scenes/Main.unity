@@ -581,11 +581,6 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 224493592750387292, guid: 5d132eebe147b4bfe87f856e7f9f6505,
         type: 2}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224493592750387292, guid: 5d132eebe147b4bfe87f856e7f9f6505,
-        type: 2}
       propertyPath: m_AnchorMax.x
       value: 0
       objectReference: {fileID: 0}
@@ -598,41 +593,6 @@ Prefab:
         type: 2}
       propertyPath: m_SizeDelta.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224362905959391754, guid: 5d132eebe147b4bfe87f856e7f9f6505,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: 0.0000030502986
-      objectReference: {fileID: 0}
-    - target: {fileID: 224176314691502794, guid: 5d132eebe147b4bfe87f856e7f9f6505,
-        type: 2}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224176314691502794, guid: 5d132eebe147b4bfe87f856e7f9f6505,
-        type: 2}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224176314691502794, guid: 5d132eebe147b4bfe87f856e7f9f6505,
-        type: 2}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224397719541884828, guid: 5d132eebe147b4bfe87f856e7f9f6505,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: 17.999878
-      objectReference: {fileID: 0}
-    - target: {fileID: 224567468910251618, guid: 5d132eebe147b4bfe87f856e7f9f6505,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: 36.599976
-      objectReference: {fileID: 0}
-    - target: {fileID: 224835913783547264, guid: 5d132eebe147b4bfe87f856e7f9f6505,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: 90.19995
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d132eebe147b4bfe87f856e7f9f6505, type: 2}
