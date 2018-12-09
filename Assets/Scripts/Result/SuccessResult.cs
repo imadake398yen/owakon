@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class SuccessResult : MonoBehaviour
 {
 
-    public CreateComment createComment; // コメントの表示するタイミングを調整するために宣言。
+    public Fukidash fukidash; // コメントの表示するタイミングを調整するために宣言。
 
     public Text label;
     public Image image;
@@ -14,7 +14,7 @@ public class SuccessResult : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        createComment.enabled = false;
+        fukidash.enabled = false;
         label.enabled = false;
         image.enabled = false;
         //　1.5秒遅らせる
@@ -32,7 +32,7 @@ public class SuccessResult : MonoBehaviour
         yield return new WaitForSeconds(1.5f);
         image.enabled = true;
         label.enabled = true;
-        createComment.enabled = true;
+        fukidash.enabled = true;
     }
 
 }
