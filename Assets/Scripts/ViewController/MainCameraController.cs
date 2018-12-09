@@ -49,11 +49,14 @@ public class MainCameraController
 				break;
 			case Const.CameraState.PlaceObstacle:
 				if (Input.GetMouseButtonDown(0)) {
+					if (Placer.SelectedObstacle != null) break;
 					RaycastHit hit;
 					Ray ray = camera.ScreenPointToRay(Input.mousePosition);
 					if (Physics.Raycast(ray, out hit)) {
 						var obstacle = Instantiate(Placer.SelectedObstacle) as Obstacle;
 						obstacle.transform.position = hit.point;
+						ChangeState(Const.CameraState.Scroll);
+						Placer.CancelSelect();
 					}
 				}
 				break;
