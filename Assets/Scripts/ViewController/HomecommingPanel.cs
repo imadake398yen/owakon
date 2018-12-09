@@ -5,12 +5,15 @@ using UnityEngine.UI;
 
 public class HomecommingPanel : SingletonMonoBehaviour<HomecommingPanel> {
 
-	[SerializeField] private Button toChaseCameraButton;
+	[SerializeField] private Button toChaseCameraButton, retryButton;
 	[SerializeField] private Text hpLabel;
 
 	private void Start () {
 		toChaseCameraButton.onClick.AddListener(() => {
 			MainCameraController.instance.ChangeState(Const.CameraState.ChaseTarget);
+		});
+		retryButton.onClick.AddListener(() => {
+			UnityEngine.SceneManagement.SceneManager.LoadScene("Main");
 		});
 	}
 
