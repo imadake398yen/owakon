@@ -15,6 +15,7 @@ public class Building : Obstacle {
     }
 
     public void Play () {
+        if (State != Const.ObstacleState.Ready) return;
         base.Play();
         Vector3 rightVec = transform.right;
         Vector3 torque = rightVec * build_torqueForce;

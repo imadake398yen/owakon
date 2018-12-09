@@ -14,6 +14,7 @@ public class Barrel : Obstacle {
     }
 
 	public void Play () {
+        if (State != Const.ObstacleState.Ready) return;
         base.Play();
         isPlaying = true;
     }
