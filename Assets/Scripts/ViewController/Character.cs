@@ -26,11 +26,11 @@ public class Character : SingletonMonoBehaviour<Character> {
         animator.SetBool("isRun", true);
 
         var distance = Vector3.Distance(transform.position, target.position);
+        agent.SetDestination(target.position);
         if (distance < 0.3f) {
             currentTarget += 1;
             if (StageManager.instance.Points.Count > currentTarget) {
                 target = StageManager.instance.Points[currentTarget];
-                agent.SetDestination(target.position);
             }
         }
     }

@@ -6,7 +6,7 @@ namespace Model {
 	[System.Serializable]
 	public class Stage {
 
-		private static Stage _current;
+		private static Stage _current = new Stage();
 		public static void Init () { _current = new Stage(); }
 
 		private Const.StageState _state = Const.StageState.Create;
