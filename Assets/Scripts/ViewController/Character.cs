@@ -6,7 +6,7 @@ using Model;
 
 public class Character : SingletonMonoBehaviour<Character> {
 
-    public int HitPoint { get; set; }
+    public float HitPoint { get; set; }
     public float Speed { get; set; }
 
     private int currentTarget = 0;
@@ -15,6 +15,7 @@ public class Character : SingletonMonoBehaviour<Character> {
     private Animator animator;
 
     private void Start () {
+        HitPoint = 100;
         target = StageManager.instance.Points[currentTarget];
         agent = GetComponent<NavMeshAgent>();
         animator = GetComponentInChildren<Animator>();
