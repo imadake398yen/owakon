@@ -374,7 +374,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1758095458
+--- !u!1001 &1513165035
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -443,45 +443,20 @@ Prefab:
       propertyPath: m_SizeDelta.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224141604614756648, guid: 5d132eebe147b4bfe87f856e7f9f6505,
+    - target: {fileID: 224326430185276714, guid: 5d132eebe147b4bfe87f856e7f9f6505,
         type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: 68
-      objectReference: {fileID: 0}
-    - target: {fileID: 224141604614756648, guid: 5d132eebe147b4bfe87f856e7f9f6505,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: 73
+      propertyPath: m_LocalScale.x
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224326430185276714, guid: 5d132eebe147b4bfe87f856e7f9f6505,
         type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: 343
+      propertyPath: m_LocalScale.y
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224326430185276714, guid: 5d132eebe147b4bfe87f856e7f9f6505,
         type: 2}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224326430185276714, guid: 5d132eebe147b4bfe87f856e7f9f6505,
-        type: 2}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224141604614756648, guid: 5d132eebe147b4bfe87f856e7f9f6505,
-        type: 2}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224141604614756648, guid: 5d132eebe147b4bfe87f856e7f9f6505,
-        type: 2}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224326430185276714, guid: 5d132eebe147b4bfe87f856e7f9f6505,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: 68
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d132eebe147b4bfe87f856e7f9f6505, type: 2}

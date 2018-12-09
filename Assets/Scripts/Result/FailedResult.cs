@@ -6,8 +6,6 @@ using UnityEngine.UI;
 public class FailedResult : MonoBehaviour
 {
 
-    public Camera target;
-
     private void Start()
     {
 
@@ -15,7 +13,8 @@ public class FailedResult : MonoBehaviour
 
     private void Update()
     {
-        target.transform.position += new Vector3(0, 0, 0.01f);
+
+
     }
 
 }
