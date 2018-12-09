@@ -9,10 +9,13 @@ EditorBuildSettings:
     path: Assets/Scenes/Start.unity
     guid: 7bb82a934cf364ceeb7ab44ec2cdc830
   - enabled: 1
+    path: Assets/Scenes/Story.unity
+    guid: f9d586f0946d845808bad0db32511594
+  - enabled: 1
     path: Assets/Scenes/Main_Fummicc1.unity
     guid: a523068f6baf849f0bb6ebc52632615d
   - enabled: 1
-    path: Assets/Scenes/Result.unity
+    path: Assets/Scenes/FailResult.unity
     guid: 0b41bc087d49646bc93e0138838c32a2
   - enabled: 1
     path: Assets/Scenes/fummicc1.unity
@@ -20,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Main.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/SuccessResult.unity
+    guid: 9e8714f51e3f84b48bc40a1d48d3e93c
   m_configObjects: {}
