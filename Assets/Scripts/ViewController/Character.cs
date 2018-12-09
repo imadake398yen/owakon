@@ -35,4 +35,17 @@ public class Character : SingletonMonoBehaviour<Character> {
         }
     }
 
+    private void OnMouseDown () {
+        Damage(Random.Range(0f, 10f));
+    }
+
+    public void Damage (float damage) {
+        if (Stage.State != Const.StageState.BraveManHomecoming) return;
+        HitPoint -= damage;
+        HomecommingPanel.instance.Damage();
+        if (HitPoint < 0) {
+            HitPoint = 0;
+        }
+    }
+
 }

@@ -202,6 +202,7 @@ GameObject:
   - component: {fileID: 4929620278509740}
   - component: {fileID: 195727132032914206}
   - component: {fileID: 114840735870780618}
+  - component: {fileID: 135609226464483736}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -2372,6 +2373,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f5f80c714ca4426cb02c3c420afdd88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!135 &135609226464483736
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1203897369199148}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.27
+  m_Center: {x: 0, y: 1.14, z: 0}
 --- !u!136 &136173547241418832
 CapsuleCollider:
   m_ObjectHideFlags: 1
