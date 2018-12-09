@@ -35,6 +35,16 @@ public class Character : SingletonMonoBehaviour<Character> {
         }
     }
 
+    private void OnTriggerEnter (Collider other) {
+        var obstacle = other.GetComponent<Obstacle>();
+        if (obstacle == null) {
+            obstacle = other.GetComponentInParent<Obstacle>();
+        }
+        if (obstacle != null) {
+            Damage(Random.Range(0f, 10f));
+        }
+    }
+
     private void OnMouseDown () {
         Damage(Random.Range(0f, 10f));
     }
