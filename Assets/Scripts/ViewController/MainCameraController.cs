@@ -61,6 +61,7 @@ public class MainCameraController
 						Stage.Obstacles.Add(obstacle);
 						ChangeState(Const.CameraState.Scroll);
 						Placer.CancelSelect();
+						Placer.LastPushObstacleCell.ToCancelSelectColor();
 					}
 				}
 				break;
